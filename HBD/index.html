@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="hi-Latn">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Sirf tumhare liye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <!-- Envelope -->
+    <div id="intro">
+      <h1 class="intro-title">Ek chhoti si cheez, sirf tumhare liye</h1>
+      <div class="env" aria-hidden="false">
+        <div class="env-back"></div>
+        <div class="env-letter"><span></span><span></span><span></span></div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <button class="seal" id="seal" aria-label="Envelope kholo">
+          &#10084;
+        </button>
+      </div>
+      <p class="intro-hint">Dil wali seal pe tap karo</p>
+    </div>
+
+    <main id="site">
+      <!-- Hero -->
+      <header class="hero wrap" id="top">
+        <div class="hero-in">
+          <h1>Tum dur ho, par dur nahi.</h1>
+          <p>
+            <span class="her">Jaan</span>, ye website maine sirf tumhare liye
+            banayi hai. Poora padhna, please.
+          </p>
+          <div id="counterBox">
+            <div class="counter" aria-live="off">
+              <div><b id="cd">0</b><small>din</small></div>
+              <div><b id="ch">0</b><small>ghante</small></div>
+              <div><b id="cm">0</b><small>minute</small></div>
+              <div><b id="cs">0</b><small>second</small></div>
+            </div>
+            <p class="counter-cap" style="margin-bottom: 0">
+              se hum saath hain, door reh kar bhi.
+            </p>
+          </div>
+          <div class="scroll-cue" aria-hidden="true">&#8595;</div>
+        </div>
+      </header>
+
+      <!-- Distance -->
+      <section class="distance">
+        <div class="wrap">
+          <h2>Beech mein sirf kilometre hain</h2>
+          <p class="sub">Dil ke beech to bas ek call ka fasla hai.</p>
+          <svg
+            viewBox="0 0 520 190"
+            role="img"
+            aria-label="Do dil, ek dusre se door, par jude hue"
+          >
+            <path
+              id="route"
+              class="path"
+              d="M70 120 C170 20, 350 20, 450 120"
+            />
+            <circle cx="70" cy="130" r="26" fill="var(--rose)" />
+            <circle cx="450" cy="130" r="26" fill="var(--rose-deep)" />
+            <text x="70" y="137" text-anchor="middle" font-size="24">
+              &#128578;
+            </text>
+            <text x="450" y="137" text-anchor="middle" font-size="24">
+              &#128522;
+            </text>
+            <text class="who" x="70" y="184" text-anchor="middle">Main</text>
+            <text class="who" x="450" y="184" text-anchor="middle">Tum</text>
+            <text id="travel" font-size="26" text-anchor="middle">
+              &#128157;
+              <animateMotion dur="4.5s" repeatCount="indefinite" rotate="0">
+                <mpath href="#route" />
+              </animateMotion>
+            </text>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Letter -->
+      <section>
+        <div class="wrap">
+          <h2>Tumhare naam ek khat</h2>
+          <p class="sub">Jo main har roz bolna chahta hoon.</p>
+          <article class="letter">
+            <div class="tape"></div>
+            <p>Meri <span class="her">Jaan</span>,</p>
+            <p>
+              Pata hai sabse mushkil kya hota hai? Din bhar ki chhoti chhoti
+              baatein tumhe batane ka mann karta hai, aur phir yaad aata hai ki
+              tum mere paas nahi ho.
+            </p>
+            <p>
+              Phone pe tumhara naam dekhke jo smile aati hai na, wahi mere poore
+              din ki sabse achhi cheez hai.
+            </p>
+            <p>
+              Mujhe pata hai ye doori kabhi kabhi bahut bhaari lagti hai. Kabhi
+              tum udaas hoti ho, kabhi main. Par jab bhi hum ek dusre ko
+              sambhaal lete hain, mujhe aur yakeen ho jata hai ki ye doori
+              hamare pyaar se badi nahi hai.
+            </p>
+            <p>
+              Main wada karta hoon ki har raat tumhari baat sunne ke liye waqt
+              nikaalunga, chahe kitna bhi thaka hoon. Aur ek din ye "bye" kehna
+              band hoga, aur "welcome home" ka silsila shuru hoga.
+            </p>
+            <p>
+              Tab tak bas itna yaad rakhna: tum akeli nahi ho. Main yahin hoon,
+              tumhare saath.
+            </p>
+            <p>Hamesha tumhara,<br /><span class="me">Tumhara pyaar</span></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Memories -->
+      <section>
+        <div class="wrap">
+          <h2>Hamari yaadein</h2>
+          <p class="sub">
+            Har photo ke peeche ek smile chhupi hai. Tap karke bada dekho.
+          </p>
+          <div class="grid" id="memories"></div>
+        </div>
+      </section>
+
+      <!-- Open when -->
+      <section>
+        <div class="wrap">
+          <h2>Jab kabhi ho aisa...</h2>
+          <p class="sub">Jab zarurat ho, tab kholna.</p>
+          <div class="notes">
+            <details>
+              <summary>
+                <span class="em">&#128546;</span>Jab tum udaas ho
+              </summary>
+              <p>
+                Ek lambi saans lo. Jo bhi hua hai, tum akeli nahi ho. Mujhe call
+                karo, ya bas chup chaap line pe raho. Main sab sunne ke liye
+                yahin hoon.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span class="em">&#127769;</span>Jab neend na aaye
+              </summary>
+              <p>
+                Aaj raat bhi wahi chaand dekh rahe hain hum dono. Aankhein band
+                karo, main tumhare paas hoon. Good night, meri jaan.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span class="em">&#129657;</span>Jab meri bahut yaad aaye
+              </summary>
+              <p>
+                Mujhe bhi aati hai. Shayad tumse zyada. Bas thoda sa aur, phir
+                ye intezaar khatam hoga aur main seedha tumhare paas hoga.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span class="em">&#128170;</span>Jab lage ki hum nahi kar
+                paayenge
+              </summary>
+              <p>
+                Hum kar rahe hain. Roz, har din. Ye doori hamein kamzor nahi,
+                aur majboot bana rahi hai. Bharosa rakho, mujh pe aur hum pe.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span class="em">&#127881;</span>Jab tum bahut khush ho
+              </summary>
+              <p>
+                To sabse pehle mujhe batana! Tumhari khushi suni to lagta hai
+                main bhi wahin tumhare saath hoon.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ending -->
+      <section class="end">
+        <div class="wrap">
+          <div class="promise">
+            <h3>Mere wade</h3>
+            <ul>
+              <li>
+                <span>&#128158;</span
+                ><span
+                  >Tumhari har baat sununga, chahe din kitna bhi lamba ho.</span
+                >
+              </li>
+              <li>
+                <span>&#128222;</span
+                ><span>Door hoon, par kabhi gaayab nahi hoonga.</span>
+              </li>
+              <li>
+                <span>&#127968;</span
+                ><span
+                  >Ek din ye doori khatam hogi, aur hum ek ghar ke honge.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="btn" id="miss">Mujhe tumhari yaad aa rahi hai</button>
+          <p id="reply" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <footer>Hamari kahani abhi baaki hai &#128150;</footer>
+    </main>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo">
+      <button id="lbClose" aria-label="Band karo">&#10005;</button>
+      <img id="lbImg" alt="" />
+      <p id="lbCap"></p>
+    </div>
+    <script src="main.js"></script>
+      </body>
+</html>
